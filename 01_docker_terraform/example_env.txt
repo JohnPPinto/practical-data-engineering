@@ -1,0 +1,13 @@
+# Postgres service
+PG_CONTAINER_NAME=<pg_container_name>
+POSTGRES_DB=<DB_name>
+POSTGRES_USER=<user_name>
+POSTGRES_PASSWORD=<pg_password>
+PG_HOST=host.docker.internal
+PG_PORT=<5432>
+
+# PGadmin service
+PGADMIN_CONTAINER_NAME=<pgadmin_container_name>
+PGADMIN_EMAIL=<pgadmin_email_id>
+PGADMIN_PASSWORd=<pgadmin_password>
+PGADMIN_PORT=<5050>

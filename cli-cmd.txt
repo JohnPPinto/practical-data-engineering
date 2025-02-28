@@ -1,0 +1,10 @@
+01_docker_terraform:
+
+Running docker compose to start postgresql and load the data using the data_loading script
+- docker compose up -d
+
+- docker build -t taxi_data_loading:v001 .
+
+- docker run --env-file .env taxi_data_loading:v001 \
+    --table=yellow_tripdata_2024_01 \
+    --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
